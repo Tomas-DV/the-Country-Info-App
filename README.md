@@ -7,12 +7,26 @@ Instructions for running:
 1. Clone this repository to your local machine:
 ```bash
 git clone https://github.com/Tomas-DV/the-Country-Info-App
+```
+
+```
+```
 
 ### Start backend
 
-cd into the nestJS backend (cd BE , cd country-info)
+1. CD into the nestJS backend 
+```
+cd BE/country-info
+```
+2. NPM install
+```
 npm i
-npm start (application starts in port 3002)
+```
+3. NPM start  (application starts in port 3002)
+```
+npm start
+```
+
 
 ### Start frontEnd
 
