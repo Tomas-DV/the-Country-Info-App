@@ -7,15 +7,16 @@ const Countries = () => {
   const [countries, setCountries] = useState<Country[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
+  const apiBaseUrl = process.env.NEXT_PUBLIC_REACT_APP_API_BASE_URL;
 
   useEffect(() => {
     const fetchCountries = async () => {
       try {
-        const res = await fetch("http://localhost:3002/countries/available");
+        const res = await fetch(`${apiBaseUrl}/countries/available`);
         if (!res.ok) throw new Error("Failed to fetch countries");
         const data = await res.json();
         setCountries(data);
-      } catch (err) {
+      } catch (err: any) {
         setError(err.message);
       } finally {
         setLoading(false);
