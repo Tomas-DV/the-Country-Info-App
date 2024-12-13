@@ -9,11 +9,7 @@ Instructions for running:
 git clone https://github.com/Tomas-DV/the-Country-Info-App
 ```
 
-```
-```
-
 ### Start backend
-
 1. CD into the nestJS backend 
 ```
 cd BE/country-info
@@ -27,11 +23,21 @@ npm i
 npm start
 ```
 
-
 ### Start frontEnd
+1. CD into repository root
+2. CD into NextJS front (cd FE , cd country-info)
+```
+cd FE/country-info
+```
+3. NPM install legacy (legacy was neccesary due to incompatibilities with the chart library)
+```
+npm i --legacy-peer-deps
+```
+4. npm run dev (the front starts in http://localhost:3000/)
+```
+npm run dev
+```
 
-cd into root
-cd into NextJS front (cd FE , cd country-info)
-npm i --legacy-peer-deps (legacy was neccesary due to incompatibilities with the chart library)
-npm run dev (the front starts in http://localhost:3000/)
+ 
+
 
