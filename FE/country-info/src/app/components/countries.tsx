@@ -40,7 +40,9 @@ const Countries = () => {
         <ul className="space-y-2">
           {countries.map((country) => (
             <li key={country.name} className="border-b pb-2">
-              <Link href={`/country/${country.name}`}>{country.name}</Link>
+              <Link href={`countrylist/${country.countryCode}`}>
+                {country.name}
+              </Link>
             </li>
           ))}
         </ul>
